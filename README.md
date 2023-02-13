@@ -27,11 +27,10 @@ Users should be able to:
 
 ![Screenshot](./screenshot.png)
 
-
 ### Links
 
 - Solution URL: [repo](https://github.com/Marpace/multi-step-form)
-- Live Site URL: [multi-step-form](https://Marpace/github.io/multi-step-form)
+- Live Site URL: [multi-step-form](https://Marpace.github.io/multi-step-form)
 
 ## My process
 
