@@ -1,0 +1,16 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 29px;
+  align-items: center;
+  background-color: $magnolia;
+  min-height: 100vh;
+  background-image: url("../../assets/images/bg-sidebar-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @include responsive($tablet_large){
+    background-image: none;
+    background-color: $magnolia;
+  }
+}

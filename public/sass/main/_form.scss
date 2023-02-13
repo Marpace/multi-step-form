@@ -1,0 +1,36 @@
+.form {
+  width: 93%;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 100px;
+  @include responsive($tablet_large) {
+    position: relative;
+    width: fit-content;
+    max-width: 1000px;
+    padding: 15px 0 15px 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 32px 28px;
+    height: fit-content;
+    @include responsive($tablet_large) {
+      height: 500px;
+      width: 600px;
+      padding: 45px 75px;
+    }
+
+    .step__heading {
+      font-size: 1.6rem;
+      color: $marine_blue;
+    }
+    .step__text {
+      color: $cool_gray;
+    }
+  }
+}

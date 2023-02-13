@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+
+
+.visible {
+    opacity: 1 !important;
+}
+
+.invisible {
+    opacity: 0 !important;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.show-flex {
+    display: flex !important;
+}
+.show-block {
+    display: block !important;
+}
