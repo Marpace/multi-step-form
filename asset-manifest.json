@@ -1,0 +1,10 @@
+{
+  "files": {
+    "main.js": "/multi-step-form/static/js/main.fe48044c.js",
+    "index.html": "/multi-step-form/index.html",
+    "main.fe48044c.js.map": "/multi-step-form/static/js/main.fe48044c.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.fe48044c.js"
+  ]
+}

@@ -1,0 +1,98 @@
+.step-four {
+  .summary{
+    background-color: $magnolia;
+    padding: 15px;
+    border-radius: 5px;
+    @include responsive($tablet_large) {
+      margin-top: 20px;
+    }
+
+    &__plan {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+
+      &-name, &-price {
+        font-size: .9rem;
+        font-weight: bold;
+        color: $marine_blue;
+
+      }
+      &-change {
+        color: $cool_gray;
+        text-decoration: underline;
+        font-size: .8rem;
+        margin-top: 5px;
+        cursor: pointer;
+      }
+      &-price {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        translate: 0 -50%;
+        font-size: .9rem;
+      }
+    }
+
+    .summary__hr {
+      margin: 15px 0;
+      background-color: $light_gray;
+      height: 1px;
+      border: none;
+    }
+
+    &__addons {
+      &-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        span {
+          font-size: .9rem;
+          color: $cool_gray;
+        }
+        span:nth-child(2) {
+          color: $marine_blue;
+        }
+      }
+    }
+    .no-addons {
+      p {
+        font-size: .9rem;
+        color: $cool_gray;
+      }
+    }
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+
+    &__title {
+      font-size: .95rem;
+      color: $cool_gray;
+    }
+    &__price {
+      font-size: 1rem;
+      font-weight: bold;
+      color: $purplish_blue;
+    }
+  }
+  .choose-plan {
+    display: flex;
+    flex-direction: column;
+
+    span {
+      font-size: 1rem;
+      color: $purplish_blue;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    span:nth-child(2) {
+      color: $cool_gray;
+      font-weight: normal;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,64 @@
+.form-steps {
+  display: flex;
+  gap: 15px;
+  margin-top: 35px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  translate: -50%;
+  @include responsive($tablet_large) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    height: 567px;
+    width: 274px;
+    margin: 0;
+    translate: 0;
+    position: static;
+    background-image: url("../../assets/images/bg-sidebar-desktop.svg");
+  }
+
+
+  .form-steps__item {
+    @include responsive($tablet_large) {
+      display: flex;
+      gap: 20px;
+      cursor: pointer;
+    }
+
+    .step-number {
+      height: 35px;
+      width: 35px;
+      padding: 0;
+      @include flex_centered(row);
+      border-radius: 50%;
+      border: 1px solid $white;
+      background: transparent;
+      font-family: "Ubuntu-Bold", sans-serif;
+      font-size: .9rem;
+      color: $white;
+    }
+    .step-active {
+      background-color: $light_blue;
+      color: $marine_blue;
+      border: none;
+    }
+    .step-line-one, .step-line-two {
+      display: none;
+      @include responsive($tablet_large) {
+        display: block;
+      }
+    }
+    .step-line-one {
+      font-size: .8rem;
+      color: $pastel_blue;
+      margin-bottom: 3px;
+    }
+    .step-line-two {
+      font-size: .9rem;
+      font-family: "Ubuntu-Bold";
+      color: $white;
+    }
+  }
+}

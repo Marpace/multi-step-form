@@ -1,0 +1,73 @@
+.step-one {
+
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    
+    &:nth-child(3) {
+      margin-top: 10px;
+    }
+    .step-one-label {
+      display: flex;
+      justify-content: space-between;
+      span:nth-child(1){
+        font-size: .8rem;
+        color: $marine_blue;
+        @include responsive($tablet_large) {
+          margin-bottom: 5px;
+          font-size: .9rem;
+        }
+      }
+      span:nth-child(2) {
+        display: none;
+        color: $strawberry_red;
+        font-family: "Ubuntu-Medium";
+      }
+    }
+    .step-one-input {
+      height: 40px;
+      padding: 20px;
+      border: 1px solid $light_gray;
+      border-radius: 5px;
+      font-family: "Ubuntu-Medium";
+      color: $marine_blue;
+      cursor: pointer;
+      @include responsive($tablet_large) {
+        height: 45px;
+        font-size: 1rem;
+        margin-bottom: 10px;
+      }
+      &::placeholder {
+        font-family: "Ubuntu-Medium";
+        color: $cool_gray;
+      }
+      &:hover {
+        border: 1px solid $purplish_blue;
+      }
+    }
+  }
+  .field-required {
+    .step-one-label {
+      span:nth-child(2) {
+        display: inline;
+      }
+    }
+    .step-one-input {
+      border: 1px solid $strawberry_red;
+    }
+  }
+
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+}
