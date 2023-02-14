@@ -28,7 +28,7 @@ function FormNavigation(props) {
 
   return (
     <div className="form-navigation">
-      <span onClick={handleBackClick} className={`form-navigation__back ${props.currentStep >= 2 ? "" : "invisible"}`}>Go back</span>
+      <span onClick={handleBackClick} className={`form-navigation__back ${props.currentStep >= 2 ? "" : "invisible"}`}>Go Back</span>
       <button 
         onClick={handleNextClick} 
         className={`form-navigation__next ${props.currentStep >= 4 ? "hidden" : ""}`}>

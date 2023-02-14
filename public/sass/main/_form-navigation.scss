@@ -19,9 +19,16 @@
   }
 
   &__back {
+    font-family: "Ubuntu-Medium";
     font-size: .9rem;
     color: $cool_gray;
     cursor: pointer;
+    @include responsive($tablet_large) {
+      font-size: 1rem;
+    }
+    &:hover {
+      color: $marine_blue;
+    }
   }
   &__next, &__confirm {
     padding: 10px 15px;
@@ -34,14 +41,18 @@
       padding: 12px 25px;
       font-size: 1rem;
       font-family: "Ubuntu-Bold";
+      transition-property: background-color;
+      transition-duration: 200ms;
     }
   }
   &__next {
     background-color: $marine_blue;
+    &:hover {
+      background-color: $purplish_blue;
+    }
   }
   &__confirm {
     background-color: $purplish_blue;
-    cursor: pointer;
     &:hover {
       background-color: $pastel_blue;
     }

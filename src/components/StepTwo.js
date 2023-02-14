@@ -39,12 +39,12 @@ function StepTwo(props) {
       </div>
 
       <div className="billing-frequency">
-        <span className="billing-frequency__text">Monthly</span>
+        <span className={`billing-frequency__text ${props.isYearly ? "text--gray" : ""}`}>Monthly</span>
         <label className="switch">
           <input onChange={handleCheckboxChange} type="checkbox" checked={props.isYearly}></input>
           <span className="slider"></span>
         </label>
-        <span className="billing-frequency__text">Yearly</span>
+        <span className={`billing-frequency__text ${props.isYearly ? "" : "text--gray"}`}>Yearly</span>
       </div>
 
     </div>
