@@ -1,16 +1,21 @@
 .thank-you {
   padding: 50px 0;
   @include flex_centered(column);
-  
+
   &__image {
     width: 50px;
+    @include responsive($tablet_large) {
+      width: 80px;
+    }
   }
   &__heading {
     font-size: 1.7rem;
     color: $marine_blue;
+    @include responsive($tablet_large){
+      font-size: 2rem;
+    }
   }
   &__text {
-    // font-size: .9rem;
     text-align: center;
     line-height: 1.5;
     color: $cool_gray;
