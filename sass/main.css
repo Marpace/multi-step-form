@@ -340,6 +340,9 @@ main {
   color: hsl(213deg, 96%, 18%);
   font-size: 0.8rem;
 }
+.step-two .billing-frequency .text--gray {
+  color: hsl(231deg, 11%, 63%);
+}
 .step-two .billing-frequency .switch {
   position: relative;
   width: 35px;
@@ -479,6 +482,9 @@ main {
   margin-top: 5px;
   cursor: pointer;
 }
+.step-four .summary__plan-change:hover {
+  color: hsl(243deg, 100%, 62%);
+}
 .step-four .summary__plan-price {
   position: absolute;
   right: 0;
@@ -538,6 +544,9 @@ main {
   text-decoration: underline;
   cursor: pointer;
 }
+.step-four .choose-plan span:nth-child(2):hover {
+  color: hsl(243deg, 100%, 62%);
+}
 
 .thank-you {
   padding: 50px 0;
@@ -592,9 +601,18 @@ main {
   }
 }
 .form-navigation__back {
+  font-family: "Ubuntu-Medium";
   font-size: 0.9rem;
   color: hsl(231deg, 11%, 63%);
   cursor: pointer;
+}
+@media only screen and (min-width: 992px) {
+  .form-navigation__back {
+    font-size: 1rem;
+  }
+}
+.form-navigation__back:hover {
+  color: hsl(213deg, 96%, 18%);
 }
 .form-navigation__next, .form-navigation__confirm {
   padding: 10px 15px;
@@ -609,14 +627,18 @@ main {
     padding: 12px 25px;
     font-size: 1rem;
     font-family: "Ubuntu-Bold";
+    transition-property: background-color;
+    transition-duration: 200ms;
   }
 }
 .form-navigation__next {
   background-color: hsl(213deg, 96%, 18%);
 }
+.form-navigation__next:hover {
+  background-color: hsl(243deg, 100%, 62%);
+}
 .form-navigation__confirm {
   background-color: hsl(243deg, 100%, 62%);
-  cursor: pointer;
 }
 .form-navigation__confirm:hover {
   background-color: hsl(228deg, 100%, 84%);

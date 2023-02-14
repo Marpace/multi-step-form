@@ -24,6 +24,9 @@
         font-size: .8rem;
         margin-top: 5px;
         cursor: pointer;
+        &:hover {
+          color: $purplish_blue;
+        }
       }
       &-price {
         position: absolute;
@@ -93,6 +96,9 @@
       font-weight: normal;
       text-decoration: underline;
       cursor: pointer;
+      &:hover {
+        color: $purplish_blue;
+      }
     }
   }
 }
