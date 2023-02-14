@@ -550,9 +550,19 @@ main {
 .thank-you__image {
   width: 50px;
 }
+@media only screen and (min-width: 992px) {
+  .thank-you__image {
+    width: 80px;
+  }
+}
 .thank-you__heading {
   font-size: 1.7rem;
   color: hsl(213deg, 96%, 18%);
+}
+@media only screen and (min-width: 992px) {
+  .thank-you__heading {
+    font-size: 2rem;
+  }
 }
 .thank-you__text {
   text-align: center;
