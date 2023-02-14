@@ -11,7 +11,7 @@ import ThankYou from "./components/ThankYou";
 
 function App() {
 
-  const [currentStep, setCurrentStep] = useState(5);
+  const [currentStep, setCurrentStep] = useState(1);
   const [isYearly, setIsYearly] = useState(false);
   const [chosenPlan, setChosenPlan] = useState()
   const [chosenAddons, setChosenAddons] = useState([]);
